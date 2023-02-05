@@ -1,0 +1,1 @@
+docker build -t wombat . && docker stop wombat && docker rm wombat && docker run -d --name=wombat --restart=always -p 80:8080 wombat
