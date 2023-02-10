@@ -1,20 +1,17 @@
 ## Build
-FROM golang:1.20.0-alpine3.17 AS build
+FROM golang:1.20.0-alpine3.17
 
 WORKDIR /wombat-src
 
 COPY . .
 RUN go mod download
-
 RUN go build -o wombat
 
-## Deploy
-FROM gcr.io/distroless/base-debian10
-
-WORKDIR /
-COPY --from=build /wombat-src/wombat /wombat
-COPY --from=build /wombat-src/static /static
+RUN addgroup --gid 2137 certgroup
+RUN adduser --disabled-password --gecos "" --ingroup certgroup wombat
+USER wombat
 
 EXPOSE 8080
-USER nonroot:nonroot
-ENTRYPOINT ["/wombat"]
+EXPOSE 8081
+
+ENTRYPOINT ["./wombat"]
