@@ -30,6 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 300;
 }
 ol, ul {
     list-style: none;
@@ -49,9 +51,20 @@ table {
 
 /* (wombatDaiquiri): my styles below */
 
+img {
+    max-width: 100%;
+}
 
 body {
-    background-color: #fd8742;
+    background-color: #f1e8bc;
+    color: #20232a;
+}
+
+#main {
+    display: block;
+    margin: 12pt auto;
+
+    max-width: 1200px;
 }
 
 #avatar {
@@ -64,8 +77,9 @@ body {
 
 h1 {
     text-align: center;
+    font-family: 'Comfortaa', cursive;
     font-size: 24pt;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 #drink-name {
@@ -98,3 +112,86 @@ h1 {
         color: #fd3a57;
     }
 }
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.menu-page {
+    display: block;
+    margin: 0 auto;
+    padding-top: 12pt;
+    font-size: 16pt;
+}
+
+h2 {
+    padding-top: 18pt;
+    font-size: 18pt;
+    font-family: 'Prata', serif;
+}
+
+.course-item {
+    padding: 14pt 12pt 8pt 12pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.course-teaser {
+    padding-right: 12pt;
+}
+
+.course-status {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.course-status-text {
+    font-family:  'Prata', serif;
+    text-align: center;
+    padding: 6pt;
+}
+
+.course-item:not(.out-of-stock) .course-status-text {
+    border: 1px solid black;
+}
+
+.out-of-stock .course-teaser {
+    -webkit-mask-image: -webkit-gradient(linear, left top,
+    right top, from(rgba(0,0,0,0.4)), to(rgba(0,0,0,0)));
+}
+
+.out-of-stock .course-status {
+    opacity: 0.4;
+}
+
+.course-item-addon {
+    padding-top: 12pt;
+    padding-left: 18pt;
+}
+
+.course-name {
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 500;
+    font-size: 18pt;
+}
+
+.course-description {
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 300;
+}
+
+#hopefully-bot-proof-but-human-readable {
+    font-size: 18pt;
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+
+#footer {
+    margin: 0 auto;
+    padding: 40pt 0 80pt 0;
+    text-align: center;
+}
+
