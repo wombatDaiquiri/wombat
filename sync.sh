@@ -1,1 +1,0 @@
-rsync -avz * wombat@daiquiri.fyi:~/src

@@ -1,17 +1,5 @@
-## Build
-FROM golang:1.20.0-alpine3.17
-
-WORKDIR /wombat-src
-
-COPY . .
-RUN go mod download
-RUN go build -o wombat
-
-RUN addgroup --gid 2137 certgroup
-RUN adduser --disabled-password --gecos "" --ingroup certgroup wombat
-USER wombat
-
+FROM nginx:1.25.1 as prod-stage
+COPY /static/* /usr/share/nginx
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 8080
-EXPOSE 8081
-
-ENTRYPOINT ["./wombat"]
+CMD ["nginx", "-g", "daemon off;"]
