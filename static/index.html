@@ -12,6 +12,51 @@
 <div id="main">
     <img id="avatar" src="wombat_daiquiri.png" />
     <h1>Welcome, have a sip of our signature <span id="drink-name">Wombat Daiquiri</span>!</h1>
+    <div id="blogposts">
+
+    </div>
 </div>
+
+<script>
+    (function() {
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "http://localhost:2137/posts");
+        xhr.onload = () => {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                const blogposts = JSON.parse(xhr.responseText);
+                const blogpostsDiv = document.getElementById("blogposts");
+                blogposts.forEach(blogpost => {
+                    const blogpostDiv = document.createElement("div");
+
+
+                    `<div className="post">
+                        <div className="title"><a href="/wombat/blog/posts/1/try-writing-a-website-by-hand">Try writing a
+                            website by hand</a></div>
+                        <div className="lead">In modern software engineering, there are more out-of-box solutions than
+                            ever. I would like to try to convince any young engineer to create, deploy and manage their
+                            own website with as little third-party tools and frameworks as possible. This post explains
+                            my motivation and how I approach such challenge.
+                        </div>
+                        <a href="/wombat/blog/posts/1/try-writing-a-website-by-hand">
+                            <div className="button cta">Read more...</div>
+                        </a>
+                    </div>`
+
+
+                    blogpostDiv.innerHTML = `
+                        <h2>${blogpost.title} <span class="published-at">${blogpost.publicationDate}</span></h2>
+                        <p>${blogpost.contentMarkdown}</p>
+                        <p></p>
+                    `;
+                    blogpostsDiv.appendChild(blogpostDiv);
+                });
+            } else {
+                console.log(`Error: ${xhr.status}`);
+            }
+        };
+        xhr.send();
+    })();
+</script>
+
 </body>
 </html>

@@ -98,3 +98,10 @@ h1 {
         color: #fd3a57;
     }
 }
+
+h2 {
+    text-align: center;
+    font-size: 18pt;
+    font-weight: bold;
+    padding-top: 36px;
+}

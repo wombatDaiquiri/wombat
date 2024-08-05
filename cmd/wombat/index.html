@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>wombat - admin</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <p>Hello, World!</p>
+    <label for="publication-date">time of publication:</label>
+    <input
+            id="publication-date"
+            type="datetime-local"
+            name="publication-date"
+            value="2005-04-02T21:37" />
+    <label for="title">title:</label>
+    <input type="text" id="title" placeholder="title" />
+    <label for="slug">slug:</label>
+    <input type="text" id="slug" placeholder="slug" />
+    <label for="content">content:</label>
+    <textarea id="content" placeholder="content">content</textarea>
+    <button id="save" onclick="saveArticle()">save</button>
+    <script>
+        const saveArticle = () => {
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "http://localhost:2137/post");
+            xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+
+            publicationDate = new Date(document.getElementById("publication-date").value);
+            if (isNaN(publicationDate)) {
+                publicationDate = null;
+            } else {
+                publicationDate = publicationDate.toISOString()
+            }
+
+            const body = JSON.stringify({
+                title: document.getElementById("title").value,
+                contentMarkdown: document.getElementById("content").value,
+                publicationDate: publicationDate,
+            });
+            xhr.onload = () => {
+                // TODO: actually this should return article with ulid in my scenario
+                if (xhr.readyState == 4 && xhr.status == 201) {
+                    console.log(JSON.parse(xhr.responseText));
+                } else {
+                    console.log(`Error: ${xhr.status}`);
+                }
+            };
+            xhr.send(body);
+        }
+    </script>
+</body>
+</html>

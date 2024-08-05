@@ -1,0 +1,180 @@
+{
+  "title": "no w sumie parsowanie to nauka HTML, CSS i  JS tylko odwrotnie   próba mikrofonu     gdybym był człowiekiem wyższej",
+  "content": "no w **sumie** parsowanie _to nauka_ HTML, CSS i\n\u003EJS **_tylko_** odwrotnie\n\u003E\n\n1.  próba\n2.  mikrofonu\n\n\u003E\n\u003E\n\n*   gdybym był człowiekiem wyższej [kultury](https://encyklopedia.pwn.pl/haslo/kultura;3928887.html)\n*   to użyłbym wpisu który już kiedyś wrzucałem\n*   [#webdev](/tag/webdev) [#programowanie](/tag/programowanie) [#lajko](/tag/lajko)",
+  "content_plain": "no w sumie parsowanie to nauka HTML, CSS i\n\nJS tylko odwrotnie\n\n\npróba\nmikrofonu\n\n\n\n\ngdybym był człowiekiem wyższej kultury\nto użyłbym wpisu który już kiedyś wrzucałem\n#webdev #programowanie #lajko\n",
+  "excerpt": "no w sumie parsowanie to nauka HTML, CSS i  JS tylko odwrotnie   próba mikrofonu     gdybym był człowiekiem wyższej kultury to użyłbym wpisu który już kiedyś wrzucałem #webdev #programowanie #lajko ",
+  "images": [
+    {
+      "urls": {
+        "250x250": "https://cdn.hejto.pl/uploads/posts/images/250x250/9a421d16b2ed45ce55d96017937b41c8.png",
+        "500x500": "https://cdn.hejto.pl/uploads/posts/images/500x500/9a421d16b2ed45ce55d96017937b41c8.png",
+        "1200x900": "https://cdn.hejto.pl/uploads/posts/images/1200x900/9a421d16b2ed45ce55d96017937b41c8.png"
+      },
+      "uuid": "d6c60930-cb43-4856-9904-536bc404c8e1",
+      "position": 1
+    },
+    {
+      "urls": {
+        "250x250": "https://cdn.hejto.pl/uploads/posts/images/250x250/b9a8093459bc37f6f13c9a40f44f6bd1.png",
+        "500x500": "https://cdn.hejto.pl/uploads/posts/images/500x500/b9a8093459bc37f6f13c9a40f44f6bd1.png",
+        "1200x900": "https://cdn.hejto.pl/uploads/posts/images/1200x900/b9a8093459bc37f6f13c9a40f44f6bd1.png"
+      },
+      "uuid": "8571de16-9934-4479-bc10-6f75188e5faf",
+      "position": 2
+    },
+    {
+      "urls": {
+        "250x250": "https://cdn.hejto.pl/uploads/posts/images/250x250/b24ede394ca9c2f020ccfaeb1a269152.png",
+        "500x500": "https://cdn.hejto.pl/uploads/posts/images/500x500/b24ede394ca9c2f020ccfaeb1a269152.png",
+        "1200x900": "https://cdn.hejto.pl/uploads/posts/images/1200x900/b24ede394ca9c2f020ccfaeb1a269152.png"
+      },
+      "uuid": "292956c9-3671-46bf-8b2a-321d682dd04b",
+      "position": 3
+    }
+  ],
+  "content_links": [
+    {
+      "url": "https://encyklopedia.pwn.pl/haslo/kultura;3928887.html",
+      "site": "Pwn",
+      "type": "rich",
+      "title": "kultura, Encyklopedia PWN: źródło wiarygodnej i rzetelnej wiedzy",
+      "audios": [],
+      "images": [
+        {
+          "url": "https://encyklopedia.pwn.pl/pwn.jpg",
+          "safe": "https%3A%2F%2Fencyklopedia.pwn.pl%2Fpwn.jpg"
+        }
+      ],
+      "videos": [],
+      "favicon": {
+        "url": "https://sjp.pwn.pl/apple-touch-icon-57x57.png",
+        "safe": "https%3A%2F%2Fsjp.pwn.pl%2Fapple-touch-icon-57x57.png"
+      },
+      "description": "Internetowa encyklopedia PWN - zawierająca ok. 200 tysięcy artykułów, haseł, ilustracji, kalendariów, tabel ze stale aktualizowanej bazy encyklopedycznej Wydawnictwa Naukowego PWN - to najlepsze źródło rzetelnej i wiarygodnej wiedzy."
+    }
+  ],
+  "poll": {
+    "title": "czy?",
+    "options": [
+      {
+        "title": "tak",
+        "num": 1,
+        "num_votes": 3
+      },
+      {
+        "title": "nie",
+        "num": 2,
+        "num_votes": 7
+      }
+    ],
+    "num_votes": 10,
+    "uuid": "18a295d7-e182-47ab-b3aa-7918e5ae88c3"
+  },
+  "comments": [],
+  "type": "discussion",
+  "slug": "no-w-sumie-parsowanie-to-nauka-html-css-i-js-tylko-odwrotnie-proba-mikrofonu-gdy",
+  "status": "published",
+  "hot": false,
+  "community": {
+    "name": "HTML, CSS i JS: pierwsze kroki",
+    "slug": "html-css-i-js-pierwsze-kroki",
+    "primary_color": "#272d75"
+  },
+  "author": {
+    "username": "wombatDaiquiri",
+    "avatar": {
+      "urls": {
+        "100x100": "https://cdn.hejto.pl/uploads/users/images/avatars/100x100/7ac8df38e27a9a6d87b3a29291539c95.png",
+        "250x250": "https://cdn.hejto.pl/uploads/users/images/avatars/250x250/7ac8df38e27a9a6d87b3a29291539c95.png"
+      },
+      "uuid": "93c58bb5-81c5-40ca-810e-bd4af41d6895"
+    },
+    "status": "active",
+    "roles": [
+      "ROLE_USER"
+    ],
+    "controversial": false,
+    "current_rank": "Autorytet",
+    "current_color": "#ff3334",
+    "verified": false,
+    "sponsor": false,
+    "ex_sponsor": false,
+    "created_at": "2023-01-18T23:38:20+01:00",
+    "_links": {
+      "self": {
+        "href": "/users/wombatDaiquiri"
+      },
+      "follows": {
+        "href": "/users/wombatDaiquiri/follows"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "programowanie",
+      "num_follows": 236,
+      "num_posts": 1629,
+      "_links": {
+        "self": {
+          "href": "/tags/programowanie"
+        },
+        "follows": {
+          "href": "/tags/programowanie/follows"
+        },
+        "blocks": {
+          "href": "/tags/programowanie/blocks"
+        }
+      }
+    },
+    {
+      "name": "webdev",
+      "num_follows": 14,
+      "num_posts": 170,
+      "_links": {
+        "self": {
+          "href": "/tags/webdev"
+        },
+        "follows": {
+          "href": "/tags/webdev/follows"
+        },
+        "blocks": {
+          "href": "/tags/webdev/blocks"
+        }
+      }
+    },
+    {
+      "name": "lajko",
+      "num_follows": 4,
+      "num_posts": 16,
+      "_links": {
+        "self": {
+          "href": "/tags/lajko"
+        },
+        "follows": {
+          "href": "/tags/lajko/follows"
+        },
+        "blocks": {
+          "href": "/tags/lajko/blocks"
+        }
+      }
+    }
+  ],
+  "nsfw": false,
+  "controversial": false,
+  "war_content": false,
+  "masked": false,
+  "num_likes": 3,
+  "num_comments": 1,
+  "num_favorites": 0,
+  "is_liked": false,
+  "is_commented": false,
+  "is_favorited": false,
+  "uuid": "f0e8702c-0ec3-4ef3-9a1d-a1a6cb4cabbb",
+  "comments_enabled": true,
+  "favorites_enabled": true,
+  "likes_enabled": true,
+  "reports_enabled": false,
+  "shares_enabled": true,
+  "created_at": "2024-06-26T21:25:10+02:00",
+  "discr": "discussion"
+}

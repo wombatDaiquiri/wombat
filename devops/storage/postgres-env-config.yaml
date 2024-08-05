@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-configmap
+  labels:
+    app: postgres
+data:
+  POSTGRES_DB: "daiquiri_fyi"
+  POSTGRES_USER: "wombat"
+  # password has been changed to avoid leaking when submitting to github
+  POSTGRES_PASSWORD: "twmojDVNIhlHALPon8JssODAb"
